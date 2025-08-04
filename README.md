@@ -11,15 +11,16 @@ Run this and restart Vim
 
 Add this to your appropriate Neovim config file then restart Neovim
 
-If you're using `init.vim`
-```
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath=&runtimepath
-source ~/.vimrc
-```
-Or this if you're using `init.lua`
+If you're using `init.lua`
 ```
 vim.cmd('set runtimepath^=~/.vim runtimepath+=~/.vim/after')
 vim.o.packpath = vim.o.runtimepath
 vim.cmd('source ~/.vimrc')
+```
+
+Or this if you're using `init.vim`
+```
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
 ```
