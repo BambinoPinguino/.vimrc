@@ -8,6 +8,7 @@ set wildmenu
 """ Add line numbers and relative line numbers with color
 set nu
 set rnu
+hi LineNr guifg=cyan ctermfg=cyan
 hi LineNrBelow guifg=grey ctermfg=grey
 hi LineNrAbove guifg=grey ctermfg=grey
 
