@@ -1,3 +1,4 @@
+""" 8/21/25
 """ Set some basic options
 set nocompatible
 syntax on
@@ -18,7 +19,13 @@ inoremap jk <esc>
   " Double tap esc to clear search highlighting
 nnoremap <esc><esc> :silent! nohls<cr>
 
-""" Leader mapping for possible future keymaps
+""" Press Esc Esc or jkj to exit Terminal mode
+:tnoremap <Esc><Esc> <C-\><C-n>
+:tnoremap jk <C-\><C-n>
+
+""" Leader mapping
 let mapleader = "\<Space>"
   " [R]eload [V]im configuration file
+  
 nnoremap <leader>rv :source $MYVIMRC<CR>
+nnoremap <leader>t :term<CR>
