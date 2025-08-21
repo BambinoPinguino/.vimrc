@@ -1,4 +1,3 @@
-""" 8/21/25
 """ Set some basic options
 set nocompatible
 syntax on
